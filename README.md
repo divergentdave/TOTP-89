@@ -14,12 +14,25 @@ This program computes two factor authentication codes using your graphing calcul
 
 ## Usage
 
-1. Click "Download ZIP" or clone the repository to get all of the files.
-2. Transfer all of the *.89? files to your calculator using a link cable. These will be in the "totp" folder on your calculator.
-3. Run totp/totpmain().
-4. Choose "Configuration," and enter the configuration parameters for your account. These can be decoded from the QR code you get when setting up two-factor authentication on your account. If you have already set up an authentication app on your smartphone, and you have rooted your smartphone, you may also be able to retrieve the configuration from your phone memory. (on Android, `su -c strings /data/data/com.google.android.apps.authenticator2/databases/databases`) Google accounts use 6 digits, a base timestamp of 0, and an interval between codes of 30,000ms. The shared secret should be entered as a base32-encoded string, consisting of the letters A-Z (case insensitive) and digits 2-7.
-5. Choose "Edit time," and enter a time approximately two minutes into the future. Use a four-digit year, 24-hour clock, (no AM or PM) and enter the current GMT offset of your timezone as a number. (-5, -6, -8, 0, 1, etc.)
-6. Choose "Generate code" and wait for the computation to finish. Once the code has been generated, enter it on the sign-in prompt as needed, but don't click submit until the current time has caught up to the time you entered in the previous step.
+1.   Click "Download ZIP" or clone the repository to get all of the files.
+
+2.   Transfer all of the *.89? files to your calculator using a link cable. These will be in the "totp" folder on your calculator.
+
+3.   Run totp/totpmain().
+
+    ![screenshot of main menu](screen-main.png)
+
+4.   Choose "Configuration," and enter the configuration parameters for your account. These can be decoded from the QR code you get when setting up two-factor authentication on your account. If you have already set up an authentication app on your smartphone, and you have rooted your smartphone, you may also be able to retrieve the configuration from your phone memory. (on Android, `su -c strings /data/data/com.google.android.apps.authenticator2/databases/databases`) Google accounts use 6 digits, a base timestamp of 0, and an interval between codes of 30,000ms. The shared secret should be entered as a base32-encoded string, consisting of the letters A-Z (case insensitive) and digits 2-7.
+
+    ![screenshot of configuration](screen-config.png)
+
+5.   Choose "Edit time," and enter a time approximately two minutes into the future. Use a four-digit year, 24-hour clock, (no AM or PM) and enter the current GMT offset of your timezone as a number. (-5, -6, -8, 0, 1, etc.)
+
+    ![screenshot of time entry](screen-time.png)
+
+6.   Choose "Generate code" and wait for the computation to finish. Once the code has been generated, enter it on the sign-in prompt as needed, but don't click submit until the current time has caught up to the time you entered in the previous step.
+
+    ![screenshot with code](screen-code.png)
 
 ## Other notes
 
